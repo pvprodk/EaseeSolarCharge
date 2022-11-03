@@ -37,3 +37,6 @@ sensor:
 
 - Change the Switch Nodes to your likings. Currently the flow pauses charging of the Solar Production goes below 500w:
 ![Switch Node Settings](https://i.imgur.com/1MHf0fV.png)
+
+- Be sure to fill out your location details in the Big Timer Node:
+![Big Timer](https://i.imgur.com/wLViGI6.png)
