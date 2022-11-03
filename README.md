@@ -40,3 +40,5 @@ sensor:
 
 - Be sure to fill out your location details in the Big Timer Node:
 ![Big Timer](https://i.imgur.com/wLViGI6.png)
+
+- Et voila! You should be good to go, if everything is done right. Please feel free to give me feedback or contribute if you find errors or bugs.
