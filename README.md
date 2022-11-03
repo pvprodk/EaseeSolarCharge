@@ -13,8 +13,8 @@ The flow supports 2 or 3 phased charging, where the two-phased is maximizing the
 - You need a solar-array, preferably with a 3 phase inverter, and you need live-data for the solar production (in watts) in Home Assistant (preferably data updating every 5-30 seconds) The flow is designed for a solar array with a max capacity of 7500w, feel free to extend the switch-nodes to higher wattage if your array is larger, or reduce the number of switch points if your array is smaller.
 - You need a Home Assistant, with the [Easee Integration](https://github.com/fondberg/easee_hass) installed.
 - You need to create two Boolean helpers in Home Assistant (one for activation of SolarCharge, and one for switching between 2 or 3 phased cars)
- - input_boolean.solarcharging
- - input_boolean.3phasecharging
+  - input_boolean.solarcharging
+  - input_boolean.3phasecharging
 - You need to create a sensor for creating 2minute average production values (correct code to your own scenario): 
  ```
 sensor: 
