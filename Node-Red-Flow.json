@@ -1107,7 +1107,7 @@
         "halt_if": "",
         "halt_if_type": "str",
         "halt_if_compare": "is",
-        "entity_id": "sensor.inverter_grid_active_power",
+        "entity_id": "sensor.inverter_2min_average_production",
         "state_type": "str",
         "blockInputOverrides": false,
         "outputProperties": [
