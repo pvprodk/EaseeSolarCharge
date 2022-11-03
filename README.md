@@ -29,7 +29,7 @@ sensor:
 - Feel free to delete the bottom part of the flow that auto enable/disable Solar Charging at sunset/sunrise. That does not impact the function of the main flow.
 
 ## Installation
-- Check off the boxes in the [Prerequisites chapter](#prerequisites)
+- Read the [Prerequisites chapter](#prerequisites)
 - Grab the .json file in this repository and import it to Node-RED
 - Adjust nodes to your entities etc.
 - Be sure to enter your Easee Charger ID the the 3 Charger ID Change Nodes:
