@@ -5,7 +5,7 @@ A Home Assistant and Node-RED based flow to dynamically control Easee EV charge 
 
 
 ## Description
-This node-red flow allong with a few requesites outlined below will allow you to control the charge current on your Easee EV Charger based on current solar production.
+This node-red flow allong with a few requisites outlined below will allow you to control the dynamic charge current on your Easee EV Charger based on current solar production.
 The flow supports 2 or 3 phased charging, where the two-phased is maximizing the charge current, assuming that you have an summarazing electricity-meter, where you can export on one phase and import on the other two phases equalling each other.
 
 ## Prerequisites
@@ -42,3 +42,9 @@ sensor:
 ![Big Timer](https://i.imgur.com/wLViGI6.png)
 
 - Et voila! You should be good to go, if everything is done right. Please feel free to give me feedback or contribute if you find errors or bugs.
+
+
+## Warning
+- Please refer to [Easee Developer Platform](https://developer.easee.cloud/) for more information about the API
+- Please only set/change dynamic current values, as it stays in the memory of the charger.
+- Setting/changing non dynamic values [will wear out the flash of the charger according to Easee ](https://developer.easee.cloud/docs/current-limits-and-control#max-circuit-current)
