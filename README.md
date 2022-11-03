@@ -46,5 +46,5 @@ sensor:
 
 ## Warning
 - Please refer to [Easee Developer Platform](https://developer.easee.cloud/) for more information about the API
-- Please only set/change dynamic current values, as it stays in the memory of the charger.
+- Please only set/change dynamic values, as it stays in the memory of the charger.
 - Setting/changing non dynamic values [will wear out the flash of the charger according to Easee ](https://developer.easee.cloud/docs/current-limits-and-control#max-circuit-current)
