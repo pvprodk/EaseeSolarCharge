@@ -1,5 +1,5 @@
 # EaseeSolarCharge
-A Home Assistant and Node-RED based flow to dynamically control Easee EV charging based on Solar Production
+A Home Assistant and Node-RED based flow to dynamically control Easee EV charge current based on solar production
 
 ![Visualisation of the flow](https://i.imgur.com/c6F0uFs.png)
 
@@ -34,5 +34,6 @@ sensor:
 - Adjust nodes to your entities etc.
 - Be sure to enter your Easee Charger ID the the 3 Charger ID Change Nodes:
 ![Charger ID Settings](https://i.imgur.com/NVquk1Y.png)
-- Change the Switch Nodes to your likings. Currently the flow pauses charging of the Solar Production goes below 500w
+
+- Change the Switch Nodes to your likings. Currently the flow pauses charging of the Solar Production goes below 500w:
 ![Switch Node Settings](https://i.imgur.com/1MHf0fV.png)
