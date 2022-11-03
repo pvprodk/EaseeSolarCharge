@@ -25,4 +25,4 @@ sensor:
       - filter: time_simple_moving_average
         window_size: "00:02"
  ```
-- Feel free to delete the part of the flow that auto enable/disable Solar Charging at sunset/sunrise. That does not impact the function of the main flow.
+- Feel free to delete the bottom part of the flow that auto enable/disable Solar Charging at sunset/sunrise. That does not impact the function of the main flow.
