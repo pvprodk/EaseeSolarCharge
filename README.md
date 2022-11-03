@@ -32,13 +32,13 @@ sensor:
 - Read the [Prerequisites chapter](#prerequisites) and create the sensors and helpers.
 - Grab the .json file in this repository and import it to Node-RED
 - Adjust nodes to your entities etc.
-- Be sure to enter your Easee Charger ID in the three "Charger ID" change nodes:
+- Be sure to enter your Easee charger-id in the three "Charger ID" change nodes:
 ![Charger ID Settings](https://i.imgur.com/NVquk1Y.png)
 
-- Change the Switch Nodes to your likings. Currently the flow pauses charging of the Solar Production goes below 500w:
+- Change the switch nodes to your likings. Currently the flow pauses charging of the solar production goes below 500w:
 ![Switch Node Settings](https://i.imgur.com/1MHf0fV.png)
 
-- Be sure to fill out your location details in the Big Timer node:
+- Be sure to fill out your location details in the big timer node:
 ![Big Timer](https://i.imgur.com/wLViGI6.png)
 
 - Et voila! You should be good to go, if everything is done right. Please feel free to give me feedback or contribute if you find errors or bugs.
