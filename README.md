@@ -13,12 +13,13 @@ The flow supports 2 or 3 phased charging, where the two-phased is maximizing the
 - You need a solar-array, preferably with a 3 phase inverter, and you need live-data for the current production in Home Assistant (preferably data updating every 5-30 seconds)
 - You need a Home Assistant, with the [Easee Integration](https://github.com/fondberg/easee_hass) installed.
 - You need to create two Boolean helpers in Home Assistant (one for activation of SolarCharge, and one for switching between 2 or 3 phased cars)
-- You need to create a sensor for creating 2minute average production values: 
+- You need to create a sensor for creating 2minute average production values (correct code to your own scenario): 
  ```
-   - platform: filter
-    name: Growatt 5min Average Production
-    entity_id: sensor.growatt_grid_active_power
+sensor: 
+  - platform: filter
+    name: Inverter 2min Average Production
+    entity_id: sensor.inverter_grid_active_power
     filters:
       - filter: time_simple_moving_average
-        window_size: "00:05"
+        window_size: "00:02"
  ```
