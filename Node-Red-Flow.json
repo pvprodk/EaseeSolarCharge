@@ -224,7 +224,7 @@
         "halt_if": "",
         "halt_if_type": "str",
         "halt_if_compare": "is",
-        "entity_id": "sensor.growatt_5min_average_production",
+        "entity_id": "sensor.inverter_2min_average_production",
         "state_type": "str",
         "blockInputOverrides": false,
         "outputProperties": [
@@ -494,7 +494,7 @@
                 "value": ""
             }
         ],
-        "entityid": "sensor.easee_hvedemarken_3_herning_status",
+        "entityid": "sensor.easee_status",
         "entityidfiltertype": "exact",
         "debugenabled": false,
         "constraints": [
@@ -1107,7 +1107,7 @@
         "halt_if": "",
         "halt_if_type": "str",
         "halt_if_compare": "is",
-        "entity_id": "sensor.growatt_5min_average_production",
+        "entity_id": "sensor.inverter_2min_average_production",
         "state_type": "str",
         "blockInputOverrides": false,
         "outputProperties": [
@@ -1447,7 +1447,7 @@
         "halt_if": "charging",
         "halt_if_type": "str",
         "halt_if_compare": "is",
-        "entity_id": "sensor.easee_hvedemarken_3_herning_status",
+        "entity_id": "sensor.easee_status",
         "state_type": "str",
         "blockInputOverrides": false,
         "outputProperties": [],
