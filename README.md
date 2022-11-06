@@ -1,7 +1,7 @@
 # EaseeSolarCharge
 A Home Assistant and Node-RED based flow to dynamically control Easee EV charge current based on solar production
 
-![Visualisation of the flow](https://i.imgur.com/c6F0uFs.png)
+![Visualisation of the flow](https://i.imgur.com/8PNL0kO.png)
 
 
 ## Description
