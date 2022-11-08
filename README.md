@@ -36,6 +36,7 @@ sensor:
 ![Charger ID Settings](https://i.imgur.com/NVquk1Y.png)
 
 - Change the switch nodes to your likings. Currently the flow pauses charging of the solar production goes below 500w:
+
 ![Switch Node Settings](https://i.imgur.com/1MHf0fV.png)
 
 - Be sure to fill out your location details in the big timer node:
