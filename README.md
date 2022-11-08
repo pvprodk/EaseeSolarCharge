@@ -41,7 +41,7 @@ sensor:
 - Be sure to fill out your location details in the big timer node:
 ![Big Timer](https://i.imgur.com/wLViGI6.png)
 
-- Please adjust the "auto enable/disable Solar-Charging at sunrise/sunset" flot to your likings, depending on which behaviour you prefer.
+- Please adjust the "auto enable/disable Solar-Charging at sunrise/sunset" flow to your likings, depending on which behaviour you prefer.
 - Et voila! You should be good to go, if everything is done right. Please feel free to give me feedback or contribute if you find errors or bugs.
 
 
