@@ -1,16 +1,8 @@
 [
     {
-        "id": "178d37357b28a2e9",
-        "type": "tab",
-        "label": "Easee Solar Charge",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "458367387ea178ef",
+        "id": "b2029e5634fb6fb7",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "1x6AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -30,14 +22,14 @@
         "y": 100,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "e26a27c52f9d452c",
+        "id": "bc6eb3a773799337",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "3x7AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -57,14 +49,14 @@
         "y": 460,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "d0e4935467fd7bf6",
+        "id": "f5f563debe44d307",
         "type": "inject",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Start every 2nd minute",
         "props": [
             {
@@ -86,14 +78,14 @@
         "y": 560,
         "wires": [
             [
-                "311ad8a76d6536f9"
+                "18a2483da46e7775"
             ]
         ]
     },
     {
-        "id": "88855582d0f74bf8",
+        "id": "7f15d11da6fd544f",
         "type": "switch",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "3-phase switch",
         "property": "payload.power_generation",
         "propertyType": "msg",
@@ -179,44 +171,44 @@
         "y": 220,
         "wires": [
             [
-                "b7faa90e3f6741cf"
+                "4441115ae39fd907"
             ],
             [
-                "458367387ea178ef"
+                "b2029e5634fb6fb7"
             ],
             [
-                "096d0191c0fb8651"
+                "9b66b54517fbdf1d"
             ],
             [
-                "2f49a85b8d7ba170"
+                "ec5df683b9fb1ed4"
             ],
             [
-                "a0bff7554a5121cd"
+                "f455837de1859335"
             ],
             [
-                "f6a6896cafbdc0ac"
+                "54354c250d900d82"
             ],
             [
-                "bf8075832149a903"
+                "383dceadcd27e547"
             ],
             [
-                "e26a27c52f9d452c"
+                "bc6eb3a773799337"
             ],
             [
-                "f0e7aad222071801"
+                "15065383651da985"
             ],
             [
-                "3c9ef71580fe768a"
+                "7bd1a7fc1a98b6c6"
             ],
             [
-                "dfce09e712a15aae"
+                "f80877045d4820bd"
             ]
         ]
     },
     {
-        "id": "9dfa88496e94bb81",
+        "id": "bcdc36d98a493529",
         "type": "api-current-state",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "2min average inverter",
         "server": "694f223e.a8eb6c",
         "version": 3,
@@ -224,7 +216,7 @@
         "halt_if": "",
         "halt_if_type": "str",
         "halt_if_compare": "is",
-        "entity_id": "sensor.inverter_2min_average_production",
+        "entity_id": "sensor.growatt_2min_average_production",
         "state_type": "str",
         "blockInputOverrides": false,
         "outputProperties": [
@@ -243,19 +235,19 @@
         "override_payload": "msg",
         "entity_location": "data",
         "override_data": "msg",
-        "x": 540,
+        "x": 500,
         "y": 200,
         "wires": [
             [
-                "1d995a2fc9203007",
-                "86a6c8ae43e82e91"
+                "82758f2ab95f0287",
+                "e524fad052a1e58e"
             ]
         ]
     },
     {
-        "id": "311ad8a76d6536f9",
+        "id": "18a2483da46e7775",
         "type": "api-current-state",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Solar-Charging active?  (Boolean)",
         "server": "694f223e.a8eb6c",
         "version": 3,
@@ -292,15 +284,15 @@
         "y": 460,
         "wires": [
             [
-                "cc2eafd99227bd42"
+                "2e32e8ddf61ffb2d"
             ],
             []
         ]
     },
     {
-        "id": "2f49a85b8d7ba170",
+        "id": "ec5df683b9fb1ed4",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "1x8AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -320,14 +312,14 @@
         "y": 220,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "a0bff7554a5121cd",
+        "id": "f455837de1859335",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "1x10AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -347,14 +339,14 @@
         "y": 280,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "bf8075832149a903",
+        "id": "383dceadcd27e547",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "1x16AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -374,14 +366,14 @@
         "y": 400,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "f0e7aad222071801",
+        "id": "15065383651da985",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "3x8AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -401,14 +393,14 @@
         "y": 520,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "3c9ef71580fe768a",
+        "id": "7bd1a7fc1a98b6c6",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "3x9AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -428,14 +420,14 @@
         "y": 580,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "dfce09e712a15aae",
+        "id": "f80877045d4820bd",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "3x10AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -455,15 +447,15 @@
         "y": 640,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "4ab850b92f991633",
+        "id": "dfd6328e8fb491a0",
         "type": "debug",
-        "z": "178d37357b28a2e9",
-        "name": "debug 4",
+        "z": "042fcc80a391ba50",
+        "name": "debug 1",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -477,9 +469,9 @@
         "wires": []
     },
     {
-        "id": "f2c8c95d2c9f91cd",
+        "id": "50d421eec1d91665",
         "type": "trigger-state",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Easee state change to Charging",
         "server": "694f223e.a8eb6c",
         "version": 2,
@@ -494,7 +486,7 @@
                 "value": ""
             }
         ],
-        "entityid": "sensor.easee_status",
+        "entityid": "sensor.easee_XXXXX_status",
         "entityidfiltertype": "exact",
         "debugenabled": false,
         "constraints": [
@@ -527,15 +519,15 @@
         "y": 500,
         "wires": [
             [
-                "311ad8a76d6536f9"
+                "18a2483da46e7775"
             ],
             []
         ]
     },
     {
-        "id": "15689542a78a012f",
+        "id": "4ada6d19bcf8e620",
         "type": "trigger-state",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Solar-Charging Enable (Boolean state change)",
         "server": "694f223e.a8eb6c",
         "version": 2,
@@ -583,15 +575,15 @@
         "y": 440,
         "wires": [
             [
-                "311ad8a76d6536f9"
+                "18a2483da46e7775"
             ],
             []
         ]
     },
     {
-        "id": "f6a6896cafbdc0ac",
+        "id": "54354c250d900d82",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "1x13AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -611,14 +603,14 @@
         "y": 340,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "096d0191c0fb8651",
+        "id": "9b66b54517fbdf1d",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "1x7AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -638,24 +630,24 @@
         "y": 160,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "654c83afac112153",
+        "id": "56d168322ba128c9",
         "type": "comment",
-        "z": "178d37357b28a2e9",
-        "name": "Solar-Charging",
+        "z": "042fcc80a391ba50",
+        "name": "Solar-Charging adjust power",
         "info": "",
-        "x": 100,
+        "x": 140,
         "y": 380,
         "wires": []
     },
     {
-        "id": "b476f900c4fae5fa",
+        "id": "dce9c3c285a1b376",
         "type": "api-current-state",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "2 or 3 phase charging? (Boolean)",
         "server": "694f223e.a8eb6c",
         "version": 3,
@@ -663,7 +655,7 @@
         "halt_if": "on",
         "halt_if_type": "str",
         "halt_if_compare": "is",
-        "entity_id": "input_boolean.3phasecharging",
+        "entity_id": "input_boolean.3_faset_opladning",
         "state_type": "str",
         "blockInputOverrides": false,
         "outputProperties": [],
@@ -679,17 +671,17 @@
         "y": 520,
         "wires": [
             [
-                "9dfa88496e94bb81"
+                "bcdc36d98a493529"
             ],
             [
-                "b1f256d51d5522d7"
+                "7c8f1db13736206e"
             ]
         ]
     },
     {
-        "id": "197a584d58883ff1",
+        "id": "26fcc4b5624ece61",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "1x6AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -709,14 +701,14 @@
         "y": 800,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "c180bddf9e7d1580",
+        "id": "a4f94a40547be446",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "2x10AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -736,14 +728,14 @@
         "y": 1160,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "46459f2a92422ddd",
+        "id": "55a58220e0ec80e3",
         "type": "switch",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "2-phase switch",
         "property": "payload.power_generation",
         "propertyType": "msg",
@@ -757,6 +749,13 @@
                 "t": "btwn",
                 "v": "500",
                 "vt": "num",
+                "v2": "1300",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "1301",
+                "vt": "num",
                 "v2": "1600",
                 "v2t": "num"
             },
@@ -764,61 +763,54 @@
                 "t": "btwn",
                 "v": "1601",
                 "vt": "num",
-                "v2": "2000",
+                "v2": "1840",
                 "v2t": "num"
             },
             {
                 "t": "btwn",
-                "v": "2001",
+                "v": "1841",
                 "vt": "num",
-                "v2": "2500",
+                "v2": "2300",
                 "v2t": "num"
             },
             {
                 "t": "btwn",
-                "v": "2501",
+                "v": "2301",
                 "vt": "num",
-                "v2": "3000",
+                "v2": "2760",
                 "v2t": "num"
             },
             {
                 "t": "btwn",
-                "v": "3001",
+                "v": "2761",
                 "vt": "num",
-                "v2": "4000",
+                "v2": "3680",
                 "v2t": "num"
             },
             {
                 "t": "btwn",
-                "v": "4001",
+                "v": "3681",
                 "vt": "num",
-                "v2": "5000",
+                "v2": "4600",
                 "v2t": "num"
             },
             {
                 "t": "btwn",
-                "v": "5001",
+                "v": "4601",
                 "vt": "num",
-                "v2": "6000",
+                "v2": "5980",
                 "v2t": "num"
             },
             {
                 "t": "btwn",
-                "v": "6001",
+                "v": "5981",
                 "vt": "num",
-                "v2": "6900",
-                "v2t": "num"
-            },
-            {
-                "t": "btwn",
-                "v": "6901",
-                "vt": "num",
-                "v2": "7400",
+                "v2": "7300",
                 "v2t": "num"
             },
             {
                 "t": "gt",
-                "v": "7401",
+                "v": "7301",
                 "vt": "num"
             }
         ],
@@ -829,44 +821,44 @@
         "y": 880,
         "wires": [
             [
-                "5667d9bcbc5b6730"
+                "c57afb41a3551d40"
             ],
             [
-                "197a584d58883ff1"
+                "26fcc4b5624ece61"
             ],
             [
-                "f4bdded23f4b4007"
+                "d8edbc024268ce9e"
             ],
             [
-                "016431f46fe0cd30"
+                "6de4db78947bd585"
             ],
             [
-                "fcdf14c2613850d7"
+                "85fd2e253010497a"
             ],
             [
-                "42ebe2101f46c92f"
+                "83574c4f10118a22"
             ],
             [
-                "99c52b446cf95cb3"
+                "5064daa24dcb61e9"
             ],
             [
-                "c180bddf9e7d1580"
+                "a4f94a40547be446"
             ],
             [
-                "fff40a3905af1ab0"
+                "ece8bb5368ef481b"
             ],
             [
-                "b6f82abacfac45d3"
+                "86709fbbbc0a2eaf"
             ],
             [
-                "5130baeb458595cd"
+                "74fa2440bb7a375d"
             ]
         ]
     },
     {
-        "id": "016431f46fe0cd30",
+        "id": "6de4db78947bd585",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "1x8AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -886,14 +878,14 @@
         "y": 920,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "fcdf14c2613850d7",
+        "id": "85fd2e253010497a",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "1x10AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -913,14 +905,14 @@
         "y": 980,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "99c52b446cf95cb3",
+        "id": "5064daa24dcb61e9",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "2x8AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -940,14 +932,14 @@
         "y": 1100,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "fff40a3905af1ab0",
+        "id": "ece8bb5368ef481b",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "2x13AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -967,14 +959,14 @@
         "y": 1220,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "b6f82abacfac45d3",
+        "id": "86709fbbbc0a2eaf",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "2x15AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -994,14 +986,14 @@
         "y": 1280,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "5130baeb458595cd",
+        "id": "74fa2440bb7a375d",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "2x16AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -1021,15 +1013,15 @@
         "y": 1340,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "609aa07502fe607a",
+        "id": "369bd524cb0b16ac",
         "type": "debug",
-        "z": "178d37357b28a2e9",
-        "name": "debug 5",
+        "z": "042fcc80a391ba50",
+        "name": "debug 2",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1043,9 +1035,9 @@
         "wires": []
     },
     {
-        "id": "42ebe2101f46c92f",
+        "id": "83574c4f10118a22",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "2x6AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -1065,14 +1057,14 @@
         "y": 1040,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "f4bdded23f4b4007",
+        "id": "d8edbc024268ce9e",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "1x7AMP",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -1092,14 +1084,14 @@
         "y": 860,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "b1f256d51d5522d7",
+        "id": "7c8f1db13736206e",
         "type": "api-current-state",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "2min average inverter",
         "server": "694f223e.a8eb6c",
         "version": 3,
@@ -1107,7 +1099,7 @@
         "halt_if": "",
         "halt_if_type": "str",
         "halt_if_compare": "is",
-        "entity_id": "sensor.inverter_2min_average_production",
+        "entity_id": "sensor.growatt_2min_average_production",
         "state_type": "str",
         "blockInputOverrides": false,
         "outputProperties": [
@@ -1130,262 +1122,15 @@
         "y": 880,
         "wires": [
             [
-                "37c7b4f4adc17ffc",
-                "cddaac943b016cb2"
+                "3de8c605cb623cf6",
+                "c198c779e63bdafa"
             ]
         ]
     },
     {
-        "id": "4c764bda15b6c284",
-        "type": "bigtimer",
-        "z": "178d37357b28a2e9",
-        "outtopic": "",
-        "outpayload1": "on",
-        "outpayload2": "off",
-        "name": "Sunrise/Sunset",
-        "comment": "",
-        "lat": "XXXXXX",
-        "lon": "XXXXXX",
-        "starttime": "5003",
-        "endtime": "5004",
-        "starttime2": 0,
-        "endtime2": 0,
-        "startoff": 0,
-        "endoff": 0,
-        "startoff2": 0,
-        "endoff2": 0,
-        "offs": 0,
-        "outtext1": "on",
-        "outtext2": "off",
-        "timeout": 1440,
-        "sun": true,
-        "mon": true,
-        "tue": true,
-        "wed": true,
-        "thu": true,
-        "fri": true,
-        "sat": true,
-        "jan": true,
-        "feb": true,
-        "mar": true,
-        "apr": true,
-        "may": true,
-        "jun": true,
-        "jul": true,
-        "aug": true,
-        "sep": true,
-        "oct": true,
-        "nov": true,
-        "dec": true,
-        "day1": 0,
-        "month1": 0,
-        "day2": 0,
-        "month2": 0,
-        "day3": 0,
-        "month3": 0,
-        "day4": 0,
-        "month4": 0,
-        "day5": 0,
-        "month5": 0,
-        "day6": 0,
-        "month6": 0,
-        "day7": 0,
-        "month7": 0,
-        "day8": 0,
-        "month8": 0,
-        "day9": 0,
-        "month9": 0,
-        "day10": 0,
-        "month10": 0,
-        "day11": 0,
-        "month11": 0,
-        "day12": 0,
-        "month12": 0,
-        "d1": 0,
-        "w1": 0,
-        "d2": 0,
-        "w2": 0,
-        "d3": 0,
-        "w3": 0,
-        "d4": 0,
-        "w4": 0,
-        "d5": 0,
-        "w5": 0,
-        "d6": 0,
-        "w6": 0,
-        "xday1": 0,
-        "xmonth1": 0,
-        "xday2": 0,
-        "xmonth2": 0,
-        "xday3": 0,
-        "xmonth3": 0,
-        "xday4": 0,
-        "xmonth4": 0,
-        "xday5": 0,
-        "xmonth5": 0,
-        "xday6": 0,
-        "xmonth6": 0,
-        "xday7": 0,
-        "xmonth7": 0,
-        "xday8": 0,
-        "xmonth8": 0,
-        "xday9": 0,
-        "xmonth9": 0,
-        "xday10": 0,
-        "xmonth10": 0,
-        "xday11": 0,
-        "xmonth11": 0,
-        "xday12": 0,
-        "xmonth12": 0,
-        "xd1": 0,
-        "xw1": 0,
-        "xd2": 0,
-        "xw2": 0,
-        "xd3": 0,
-        "xw3": 0,
-        "xd4": 0,
-        "xw4": 0,
-        "xd5": 0,
-        "xw5": 0,
-        "xd6": 0,
-        "xw6": 0,
-        "suspend": false,
-        "random": false,
-        "randon1": false,
-        "randoff1": false,
-        "randon2": false,
-        "randoff2": false,
-        "repeat": false,
-        "atstart": true,
-        "odd": false,
-        "even": false,
-        "x": 100,
-        "y": 1260,
-        "wires": [
-            [
-                "767a07accea97e4e"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "159788135b456388",
+        "id": "4441115ae39fd907",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
-        "name": "Enable Solar-Charging (Boolean)",
-        "server": "694f223e.a8eb6c",
-        "version": 5,
-        "debugenabled": false,
-        "domain": "input_boolean",
-        "service": "turn_on",
-        "areaId": [],
-        "deviceId": [],
-        "entityId": [
-            "input_boolean.solarcharging"
-        ],
-        "data": "",
-        "dataType": "jsonata",
-        "mergeContext": "",
-        "mustacheAltTags": false,
-        "outputProperties": [],
-        "queue": "none",
-        "x": 580,
-        "y": 1220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "767a07accea97e4e",
-        "type": "switch",
-        "z": "178d37357b28a2e9",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "off",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 290,
-        "y": 1260,
-        "wires": [
-            [
-                "159788135b456388"
-            ],
-            [
-                "f17fa78d79f7eb78",
-                "a6e0cb342296843b"
-            ]
-        ]
-    },
-    {
-        "id": "f17fa78d79f7eb78",
-        "type": "api-call-service",
-        "z": "178d37357b28a2e9",
-        "name": "Disable Solar-Charging (Boolean)",
-        "server": "694f223e.a8eb6c",
-        "version": 5,
-        "debugenabled": false,
-        "domain": "input_boolean",
-        "service": "turn_off",
-        "areaId": [],
-        "deviceId": [],
-        "entityId": [
-            "input_boolean.solarcharging"
-        ],
-        "data": "",
-        "dataType": "jsonata",
-        "mergeContext": "",
-        "mustacheAltTags": false,
-        "outputProperties": [],
-        "queue": "none",
-        "x": 580,
-        "y": 1280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "39e3d89295dedae2",
-        "type": "api-call-service",
-        "z": "178d37357b28a2e9",
-        "name": "3x16AMP",
-        "server": "694f223e.a8eb6c",
-        "version": 5,
-        "debugenabled": true,
-        "domain": "easee",
-        "service": "set_charger_circuit_dynamic_limit",
-        "areaId": [],
-        "deviceId": [],
-        "entityId": [],
-        "data": "{\"charger_id\":\"{{payload}}\",\"currentP1\":16,\"currentP2\":16,\"currentP3\":16}",
-        "dataType": "json",
-        "mergeContext": "",
-        "mustacheAltTags": false,
-        "outputProperties": [],
-        "queue": "none",
-        "x": 760,
-        "y": 1420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b7faa90e3f6741cf",
-        "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Pause Charging",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -1405,14 +1150,14 @@
         "y": 40,
         "wires": [
             [
-                "4ab850b92f991633"
+                "dfd6328e8fb491a0"
             ]
         ]
     },
     {
-        "id": "5667d9bcbc5b6730",
+        "id": "c57afb41a3551d40",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Pause Charging",
         "server": "694f223e.a8eb6c",
         "version": 5,
@@ -1432,14 +1177,14 @@
         "y": 740,
         "wires": [
             [
-                "609aa07502fe607a"
+                "369bd524cb0b16ac"
             ]
         ]
     },
     {
-        "id": "cc2eafd99227bd42",
+        "id": "2e32e8ddf61ffb2d",
         "type": "api-current-state",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Easee Status Charging?",
         "server": "694f223e.a8eb6c",
         "version": 3,
@@ -1447,7 +1192,7 @@
         "halt_if": "charging",
         "halt_if_type": "str",
         "halt_if_compare": "is",
-        "entity_id": "sensor.easee_status",
+        "entity_id": "sensor.easee_XXXXX_status",
         "state_type": "str",
         "blockInputOverrides": false,
         "outputProperties": [],
@@ -1463,15 +1208,15 @@
         "y": 540,
         "wires": [
             [
-                "b476f900c4fae5fa"
+                "dce9c3c285a1b376"
             ],
             []
         ]
     },
     {
-        "id": "1d995a2fc9203007",
+        "id": "82758f2ab95f0287",
         "type": "change",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Power Generation",
         "rules": [
             {
@@ -1491,14 +1236,14 @@
         "y": 180,
         "wires": [
             [
-                "130a6fb77af41e56"
+                "9b3432e01005bdbd"
             ]
         ]
     },
     {
-        "id": "86a6c8ae43e82e91",
+        "id": "e524fad052a1e58e",
         "type": "change",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Charger ID",
         "rules": [
             {
@@ -1512,7 +1257,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "EH123456",
+                "to": "EHXXXXX",
                 "tot": "str"
             }
         ],
@@ -1525,14 +1270,14 @@
         "y": 240,
         "wires": [
             [
-                "130a6fb77af41e56"
+                "9b3432e01005bdbd"
             ]
         ]
     },
     {
-        "id": "130a6fb77af41e56",
+        "id": "9b3432e01005bdbd",
         "type": "join",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -1553,14 +1298,14 @@
         "y": 220,
         "wires": [
             [
-                "88855582d0f74bf8"
+                "7f15d11da6fd544f"
             ]
         ]
     },
     {
-        "id": "37c7b4f4adc17ffc",
+        "id": "3de8c605cb623cf6",
         "type": "change",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Power Generation",
         "rules": [
             {
@@ -1580,14 +1325,14 @@
         "y": 840,
         "wires": [
             [
-                "205c214c88dad936"
+                "d9d68d8fe18b0e57"
             ]
         ]
     },
     {
-        "id": "cddaac943b016cb2",
+        "id": "c198c779e63bdafa",
         "type": "change",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Charger ID",
         "rules": [
             {
@@ -1601,7 +1346,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "EH123456",
+                "to": "EHXXXXX",
                 "tot": "str"
             }
         ],
@@ -1614,14 +1359,14 @@
         "y": 900,
         "wires": [
             [
-                "205c214c88dad936"
+                "d9d68d8fe18b0e57"
             ]
         ]
     },
     {
-        "id": "205c214c88dad936",
+        "id": "d9d68d8fe18b0e57",
         "type": "join",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -1642,28 +1387,113 @@
         "y": 880,
         "wires": [
             [
-                "46459f2a92422ddd"
+                "55a58220e0ec80e3"
             ]
         ]
     },
     {
-        "id": "a6e0cb342296843b",
+        "id": "df2235d66d0b47d3",
+        "type": "trigger-state",
+        "z": "042fcc80a391ba50",
+        "name": "Growatt 2min gns. produktion",
+        "server": "694f223e.a8eb6c",
+        "version": 2,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityid": "sensor.growatt_2min_average_production",
+        "entityidfiltertype": "exact",
+        "debugenabled": false,
+        "constraints": [
+            {
+                "targetType": "this_entity",
+                "targetValue": "",
+                "propertyType": "current_state",
+                "propertyValue": "new_state.state",
+                "comparatorType": ">",
+                "comparatorValueDatatype": "num",
+                "comparatorValue": "1000"
+            }
+        ],
+        "inputs": 0,
+        "outputs": 2,
+        "customoutputs": [],
+        "outputinitially": false,
+        "state_type": "str",
+        "enableInput": false,
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "a1801513ba5ad7e4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a1801513ba5ad7e4",
+        "type": "api-current-state",
+        "z": "042fcc80a391ba50",
+        "name": "Solar-Charging active?  (Boolean)",
+        "server": "694f223e.a8eb6c",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "input_boolean.solarcharging",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 480,
+        "y": 80,
+        "wires": [
+            [
+                "22bf4e735c7f1d74"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "22bf4e735c7f1d74",
         "type": "change",
-        "z": "178d37357b28a2e9",
+        "z": "042fcc80a391ba50",
         "name": "Charger ID",
         "rules": [
             {
                 "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "charger_id",
-                "tot": "str"
-            },
-            {
-                "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "EH123456",
+                "to": "EHXXXXX",
                 "tot": "str"
             }
         ],
@@ -1672,30 +1502,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
-        "y": 1360,
+        "x": 750,
+        "y": 80,
         "wires": [
             [
-                "18ba57844dec9919",
-                "98016522d165b648"
+                "5b8ea4dc0c945013"
             ]
         ]
     },
     {
-        "id": "200cbbd842cf2be3",
-        "type": "comment",
-        "z": "178d37357b28a2e9",
-        "name": "Auto enable/disable Solar-Charging at sunrise/sunset",
-        "info": "",
-        "x": 220,
-        "y": 1140,
-        "wires": []
-    },
-    {
-        "id": "18ba57844dec9919",
+        "id": "5b8ea4dc0c945013",
         "type": "api-call-service",
-        "z": "178d37357b28a2e9",
-        "name": "Stop Charging",
+        "z": "042fcc80a391ba50",
+        "name": "Start Charging",
         "server": "694f223e.a8eb6c",
         "version": 5,
         "debugenabled": false,
@@ -1704,59 +1523,26 @@
         "areaId": [],
         "deviceId": [],
         "entityId": [],
-        "data": "{\"charger_id\":\"{{payload}}\",\"action_command\":\"stop\"}",
+        "data": "{\"charger_id\":\"{{payload}}\",\"action_command\":\"resume\"}",
         "dataType": "json",
         "mergeContext": "",
         "mustacheAltTags": false,
         "outputProperties": [],
         "queue": "none",
-        "x": 620,
-        "y": 1360,
+        "x": 960,
+        "y": 80,
         "wires": [
-            [
-                "39597d33d171610d"
-            ]
+            []
         ]
     },
     {
-        "id": "98016522d165b648",
-        "type": "delay",
-        "z": "178d37357b28a2e9",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "30",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 600,
-        "y": 1420,
-        "wires": [
-            [
-                "39e3d89295dedae2"
-            ]
-        ]
-    },
-    {
-        "id": "39597d33d171610d",
-        "type": "debug",
-        "z": "178d37357b28a2e9",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 1360,
+        "id": "e5ec67b4347d05e8",
+        "type": "comment",
+        "z": "042fcc80a391ba50",
+        "name": "Start Solar Charging when above 1000w production",
+        "info": "",
+        "x": 230,
+        "y": 40,
         "wires": []
     },
     {
