@@ -32,7 +32,7 @@ sensor:
 - Read the [Prerequisites chapter](#prerequisites) and create the sensors and helpers.
 - Grab the .json file in this repository and import it to Node-RED
 - Adjust nodes to your entities etc.
-- Be sure to enter your Easee charger-id in the three "Charger ID" change nodes:
+- Be sure to enter your Easee charger-id in the four "Charger ID" change nodes:
 ![Charger ID Settings](https://i.imgur.com/NVquk1Y.png)
 
 - Change the switch nodes to your likings. Currently the flow pauses charging of the solar production goes below 500w:
